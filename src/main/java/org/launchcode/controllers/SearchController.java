@@ -28,6 +28,8 @@ public class SearchController {
 
     @RequestMapping(value = "results")
     public String search(Model model,
+
+                         
                          @ModelAttribute SearchForm searchForm) {
 
         ArrayList<Job> jobs;
