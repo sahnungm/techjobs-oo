@@ -35,7 +35,7 @@ public class JobDataImporter {
 
         try {
 
-            // Open the CSV file and set up pull out column header info and records
+
             Resource resource = new ClassPathResource(DATA_FILE);
             InputStream is = resource.getInputStream();
             Reader reader = new InputStreamReader(is);
@@ -44,7 +44,7 @@ public class JobDataImporter {
             Integer numberOfColumns = records.get(0).size();
             String[] headers = parser.getHeaderMap().keySet().toArray(new String[numberOfColumns]);
 
-            // Put the records into a more friendly format
+            // Dhig keydinta si aad u saaxiibimo ah format
             for (CSVRecord record : records) {
 
                 String empStr = record.get("employer");
