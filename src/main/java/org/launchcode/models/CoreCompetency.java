@@ -1,11 +1,12 @@
 package org.launchcode.models;
-
 /**
- * Created by LaunchCode
- */
-public class CoreCompetency extends JobField {
+ * Created ny Launchcode
+ *
+ * */
 
-    public CoreCompetency(String value) {
+public class CoreCompetency extends JobField{
+
+    public CoreCompetency(String value){
         super(value);
     }
 }
