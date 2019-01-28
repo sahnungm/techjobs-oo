@@ -35,7 +35,7 @@ public class JobDataImporter {
 
         try {
 
-            //  Fur CSV file ka ah haddana samee madax warbxin ah
+            // Open the CSV file and set up pull out column header info and records
             Resource resource = new ClassPathResource(DATA_FILE);
             InputStream is = resource.getInputStream();
             Reader reader = new InputStreamReader(is);
