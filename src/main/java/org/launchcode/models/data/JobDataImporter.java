@@ -35,7 +35,7 @@ public class JobDataImporter {
 
         try {
 
-            // Open the CSV file and set up pull out column header info and records
+            //  Fur CSV file ka ah haddana samee madax warbxin ah
             Resource resource = new ClassPathResource(DATA_FILE);
             InputStream is = resource.getInputStream();
             Reader reader = new InputStreamReader(is);
@@ -81,7 +81,7 @@ public class JobDataImporter {
                 jobData.add(newJob);
             }
 
-            // flag the data as loaded, so we don't do it twice
+
             isDataLoaded = true;
 
         } catch (IOException e) {
